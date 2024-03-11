@@ -208,7 +208,7 @@ button:hover {
 .softSkillList li {
     list-style-type: circle;
     text-align: center;
-    font-size:15px;
+    font-size: 15px;
     color: white;
     font-weight: 500;
 }
@@ -252,24 +252,27 @@ button:hover {
     font-weight: 600;
 }
 
-.footer{
+.footer {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items:end;
+    align-items: end;
 }
-.footerList{
+
+.footerList {
     background: linear-gradient(109.6deg, rgb(156, 252, 248) 11.2%, rgb(110, 123, 251) 91.1%);
     color: white;
     width: 100%;
     text-align: center;
     padding: 10px;
 }
-.footerList h2{
+
+.footerList h2 {
     font-size: 25px;
 }
-.footerList li{
+
+.footerList li {
     list-style-type: none;
     padding: 5px;
     font-size: 15px;
@@ -277,6 +280,7 @@ button:hover {
     display: inline-block;
     margin: 0px 10px;
 }
+
 .bigContainer {
     position: relative;
     overflow-y: scroll;
@@ -287,7 +291,8 @@ button:hover {
 .welcome,
 .container,
 .skills,
-.contact ,.footer{
+.contact,
+.footer {
     scroll-snap-align: start;
     height: 100vh;
 }
@@ -319,34 +324,41 @@ html {
     position: absolute;
 }
 
-.skills:hover{
-    max-width: 100%;
-    justify-content:space-around;
+.skills:hover {
+    width: 100%;
+    justify-content: space-around;
+    margin: 10px;
+
 }
 
 /*  */
 @media screen and (max-width: 992px) {
+
     .welcome,
     .container,
     .skills,
-    .contact{
-        scroll-snap-align:none;
+    .contact {
+        scroll-snap-align: none;
         height: 100vh;
     }
+
     .bigContainer {
         position: relative;
         overflow-y: scroll;
         height: 100vh;
         scroll-snap-type: y mandatory;
     }
-    .footer{
+
+    .footer {
         scroll-snap-align: none;
         height: 80vh;
     }
-    .footer h2{
+
+    .footer h2 {
         font-size: 15px;
     }
-    .footer li{
+
+    .footer li {
         font-size: 12px;
     }
 
@@ -361,15 +373,14 @@ html {
     }
 
     .thankYouBox {
-        width: 100%;
-        margin-top: 20px;
-        display:flex;
-        flex-direction: column;
-        margin-left: 55%;
+        width: 80%;
+        margin-top: 50%;
+        display:block;
     }
 
     .contact img {
-        width: 40%; /* Adjust image width */
+        width: 40%;
+        /* Adjust image width */
         height: auto;
     }
 
@@ -386,45 +397,52 @@ html {
 
     /* Ensure contact section doesn't go under skills */
     .skills,
-    .contact{
-        min-height: 50vh; /* Set a minimum height to fill the screen */
+    .contact {
+        min-height: 50vh;
+        /* Set a minimum height to fill the screen */
     }
 
-    .welcome{
+    .welcome {
         width: 80%;
         display: flex;
         margin-left: auto;
         margin-right: auto;
     }
-    .welcome img{
+
+    .welcome img {
         width: 40%;
     }
-    .welcome h2{
+
+    .welcome h2 {
         font-size: 18px;
         width: 40%;
     }
-    .welcome span{
+
+    .welcome span {
         font-size: 20px;
     }
-    .container{
+
+    .container {
         width: 100%;
-        margin-bottom:30% ;
-    }
-    .box,.info{
-        display:flex;
-        flex-direction: column;
-        width: 80%;
-        
+        margin-bottom: 30%;
     }
 
-    .container img{
+    .box,
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+    }
+
+    .container img {
         width: 150px;
         height: auto;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    .container button{
+    .container button {
         margin-top: 10px;
         margin-bottom: 10px;
         align-self: center;
@@ -435,7 +453,7 @@ html {
         background-color: white;
         border: 2px solid #34b4eb;
     }
-    
+
     .navBar {
         display: flex;
         background-color: white;
@@ -457,80 +475,90 @@ html {
         font-size: 15px;
         font-weight: 600;
     }
-    .skills{
+
+    .skills {
         width: 100%;
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .skillList,.softSkillList,.interestList{
+    .skillList,
+    .softSkillList,
+    .interestList {
         width: 50%;
         height: auto;
         margin-top: 20px;
         position: relative;
     }
 
-    .skillList li,.interestList li,.softSkillList li{
+    .skillList li,
+    .interestList li,
+    .softSkillList li {
         font-size: 12px;
     }
 
     .skills .skillList,
-.skills .interestList,
-.skills .softSkillList {
-    transition: none;
-}
+    .skills .interestList,
+    .skills .softSkillList {
+        transition: none;
+    }
 
-.skills:hover .skillList {
-    width: 50%;
-    height: auto;
-    margin-top: 20px;
-    position: relative;
-    transform: none;
-}
+    .skills:hover .skillList {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+        position: relative;
+        transform: none;
+    }
 
-.skills:hover .interestList {
-    width: 50%;
-    height: auto;
-    margin-top: 20px;
-    position: relative;
-    transform: none;
-}
+    .skills:hover .interestList {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+        position: relative;
+        transform: none;
+    }
 
-.skills:hover .softSkillList {
-    width: 50%;
-    height: auto;
-    margin-top: 20px;
-    position: relative;
-    transform: none;
-}
+    .skills:hover .softSkillList {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+        position: relative;
+        transform: none;
+    }
 
 }
 
 
 /*  */
 @media screen and (max-width: 768px) {
+
     .welcome,
     .container,
     .skills,
-    .contact{
-        scroll-snap-align:none;
+    .contact {
+        scroll-snap-align: none;
         height: 100vh;
     }
+
     .bigContainer {
         position: relative;
         overflow-y: scroll;
         height: 100vh;
         scroll-snap-type: y mandatory;
     }
-    .footer{
+
+    .footer {
         scroll-snap-align: none;
         height: 80vh;
     }
-    .footer h2{
+
+    .footer h2 {
         font-size: 15px;
     }
-    .footer li{
+
+    .footer li {
         font-size: 12px;
     }
 
@@ -544,16 +572,17 @@ html {
         margin-bottom: 2rem;
     }
 
+
     .thankYouBox {
-        width: 100%;
-        margin-top: 20px;
-        display:flex;
-        flex-direction: column;
-        margin-left: 55%;
+        width: 80%;
+        margin-top: 50%;
+        display: block;
     }
 
+
     .contact img {
-        width: 40%; /* Adjust image width */
+        width: 40%;
+        /* Adjust image width */
         height: auto;
     }
 
@@ -570,45 +599,52 @@ html {
 
     /* Ensure contact section doesn't go under skills */
     .skills,
-    .contact{
-        min-height: 50vh; /* Set a minimum height to fill the screen */
+    .contact {
+        min-height: 50vh;
+        /* Set a minimum height to fill the screen */
     }
 
-    .welcome{
+    .welcome {
         width: 80%;
         display: flex;
         margin-left: auto;
         margin-right: auto;
     }
-    .welcome img{
+
+    .welcome img {
         width: 40%;
     }
-    .welcome h2{
+
+    .welcome h2 {
         font-size: 18px;
         width: 40%;
     }
-    .welcome span{
+
+    .welcome span {
         font-size: 20px;
     }
-    .container{
+
+    .container {
         width: 100%;
-        margin-bottom:100% ;
-    }
-    .box,.info{
-        display:flex;
-        flex-direction: column;
-        width: 80%;
-        
+        margin-bottom: 100%;
     }
 
-    .container img{
+    .box,
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+    }
+
+    .container img {
         width: 150px;
         height: auto;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    .container button{
+    .container button {
         margin-top: 10px;
         margin-bottom: 10px;
         align-self: center;
@@ -619,11 +655,11 @@ html {
         background-color: white;
         border: 2px solid #34b4eb;
     }
-    
+
     .navBar {
         display: flex;
         background-color: white;
-        justify-content:space-around;
+        justify-content: space-around;
         align-items: center;
         top: 0;
         left: 0;
@@ -641,56 +677,62 @@ html {
         font-size: 15px;
         font-weight: 600;
     }
-    .navBar h2{
+
+    .navBar h2 {
         margin-left: 10px;
     }
-    .skills{
+
+    .skills {
         width: 100%;
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .skillList,.softSkillList,.interestList{
+    .skillList,
+    .softSkillList,
+    .interestList {
         width: 50%;
         height: auto;
         margin-top: 20px;
         position: relative;
     }
 
-    .skillList li,.interestList li,.softSkillList li{
+    .skillList li,
+    .interestList li,
+    .softSkillList li {
         font-size: 12px;
     }
 
     .skills .skillList,
-.skills .interestList,
-.skills .softSkillList {
-    transition: none;
-}
+    .skills .interestList,
+    .skills .softSkillList {
+        transition: none;
+    }
 
-.skills:hover .skillList {
-    width: 50%;
-    height: auto;
-    margin-top: 20px;
-    position: relative;
-    transform: none;
-}
+    .skills:hover .skillList {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+        position: relative;
+        transform: none;
+    }
 
-.skills:hover .interestList {
-    width: 50%;
-    height: auto;
-    margin-top: 20px;
-    position: relative;
-    transform: none;
-}
+    .skills:hover .interestList {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+        position: relative;
+        transform: none;
+    }
 
-.skills:hover .softSkillList {
-    width: 50%;
-    height: auto;
-    margin-top: 20px;
-    position: relative;
-    transform: none;
-}
+    .skills:hover .softSkillList {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+        position: relative;
+        transform: none;
+    }
 
 }
 
@@ -701,24 +743,32 @@ html {
 
 /*  */
 @media screen and (max-width: 480px) {
-    
+
+    .body {
+        width: 100%;
+    }
+
     .welcome,
     .container,
     .skills,
-    .contact ,.footer{
-        scroll-snap-align:none;
+    .contact,
+    .footer {
+        scroll-snap-align: none;
         height: 100vh;
     }
+
     .bigContainer {
         position: relative;
         overflow-y: scroll;
         height: 100vh;
         scroll-snap-type: y mandatory;
     }
-    .footer h2{
+
+    .footer h2 {
         font-size: 15px;
     }
-    .footer li{
+
+    .footer li {
         font-size: 12px;
     }
 
@@ -728,20 +778,20 @@ html {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 50px; /* Add some top margin for spacing */
-        margin-bottom:-120% ;
+        margin-top: 50px;
+        /* Add some top margin for spacing */
+        margin-bottom: -120%;
     }
 
     .thankYouBox {
-        width: 100%;
-        margin-top: 20px;
-        display:flex;
-        flex-direction: column;
-        margin-left: 55%;
+        width: 80%;
+        margin-top: 50%;
+        display: block;
     }
 
     .contact img {
-        width: 40%; /* Adjust image width */
+        width: 40%;
+        /* Adjust image width */
         height: auto;
     }
 
@@ -759,44 +809,51 @@ html {
     /* Ensure contact section doesn't go under skills */
     .skills,
     .contact {
-        min-height: 50vh; /* Set a minimum height to fill the screen */
+        min-height: 50vh;
+        /* Set a minimum height to fill the screen */
     }
 
-    .welcome{
+    .welcome {
         width: 80%;
         display: flex;
         margin-left: auto;
         margin-right: auto;
     }
-    .welcome img{
+
+    .welcome img {
         width: 40%;
     }
-    .welcome h2{
+
+    .welcome h2 {
         font-size: 18px;
         width: 40%;
     }
-    .welcome span{
+
+    .welcome span {
         font-size: 20px;
     }
-    .container{
+
+    .container {
         width: 100%;
-        margin-bottom:150% ;
-    }
-    .box,.info{
-        display:flex;
-        flex-direction: column;
-        width: 80%;
-        
+        margin-bottom: 150%;
     }
 
-    .container img{
+    .box,
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+    }
+
+    .container img {
         width: 150px;
         height: auto;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    .container button{
+    .container button {
         margin-top: 10px;
         margin-bottom: 10px;
         align-self: center;
@@ -807,15 +864,15 @@ html {
         background-color: white;
         border: 2px solid #34b4eb;
     }
-    
-    .navBar{
+
+    .navBar {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
     }
 
-    .nav li{
+    .nav li {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -823,58 +880,62 @@ html {
         text-align: center;
     }
 
-    .navBar{
-        position:relative;
+    .navBar {
+        position: relative;
         margin-bottom: 0;
-        background-color:white;
+        background-color: white;
     }
 
-    .skills{
+    .skills {
         width: 100%;
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .skillList,.softSkillList,.interestList{
+    .skillList,
+    .softSkillList,
+    .interestList {
         width: 50%;
         height: auto;
         margin-top: 20px;
         position: relative;
     }
 
-    .skillList li,.interestList li,.softSkillList li{
+    .skillList li,
+    .interestList li,
+    .softSkillList li {
         font-size: 12px;
     }
 
     .skills .skillList,
-.skills .interestList,
-.skills .softSkillList {
-    transition: none;
-}
+    .skills .interestList,
+    .skills .softSkillList {
+        transition: none;
+    }
 
-.skills:hover .skillList {
-    width: 50%;
-    height: auto;
-    margin-top: 20px;
-    position: relative;
-    transform: none;
-}
+    .skills:hover .skillList {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+        position: relative;
+        transform: none;
+    }
 
-.skills:hover .interestList {
-    width: 50%;
-    height: auto;
-    margin-top: 20px;
-    position: relative;
-    transform: none;
-}
+    .skills:hover .interestList {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+        position: relative;
+        transform: none;
+    }
 
-.skills:hover .softSkillList {
-    width: 50%;
-    height: auto;
-    margin-top: 20px;
-    position: relative;
-    transform: none;
-}
+    .skills:hover .softSkillList {
+        width: 50%;
+        height: auto;
+        margin-top: 20px;
+        position: relative;
+        transform: none;
+    }
 
 }
